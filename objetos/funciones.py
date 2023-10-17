@@ -74,5 +74,18 @@ def comboBox(xpath, valor, carpeta:str,segundos = 2):
     drop.select_by_index(valor)
     captura_time(carpeta, segundos)
 
+def codigo(xpath, carpeta, code1, code2, code3, code4, segundos):
+    Confirmacion = driver.find_element(By.XPATH, xpath)
+    codigo = Confirmacion.text
+    print(codigo.split(','))
+    print(codigo[0])
+    print(codigo[1])
+    print(codigo[2])
+    print(codigo[3])
+    captura_time(carpeta, segundos)
+    text_elemento(code1, codigo[0], carpeta, 1)
+    text_elemento(code2, codigo[1], carpeta, 1)
+    text_elemento(code3, codigo[2], carpeta, 1)
+    text_elemento(code4, codigo[3], carpeta, 1)
 
 

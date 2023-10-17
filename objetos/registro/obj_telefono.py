@@ -1,0 +1,11 @@
+telefono = '/html/body/app-root/app-main-page/app-register-phone-page/div/div[1]/div/form/div[1]/div/input'
+siguiente = '/html/body/app-root/app-main-page/app-register-phone-page/div/div[1]/div/form/div[2]/button'
+cambioTelefono = '/html/body/app-root/app-main-page/app-register-phone-page/div/div[1]/div/p[2]/button'
+volverEnviar = '/html/body/app-root/app-main-page/app-register-phone-page/div/div[1]/div/form/div[2]/button[2]'
+code = '/html/body/app-root/app-main-page/app-register-phone-page/div/div[1]/div/p[3]'
+code1 = '/html/body/app-root/app-main-page/app-register-phone-page/div/div[1]/div/form/div[1]/div/span[1]/input'
+code2 = '/html/body/app-root/app-main-page/app-register-phone-page/div/div[1]/div/form/div[1]/div/span[2]/input'
+code3 = '/html/body/app-root/app-main-page/app-register-phone-page/div/div[1]/div/form/div[1]/div/span[3]/input'
+code4 = '/html/body/app-root/app-main-page/app-register-phone-page/div/div[1]/div/form/div[1]/div/span[4]/input'
+siguiente2 = '/html/body/app-root/app-main-page/app-register-phone-page/div/div[1]/div/form/div[2]/button[1]'
+
