@@ -1,0 +1,4 @@
+crearCuenta = '/html/body/app-root/app/div/div[2]/div/form/div[3]/a'
+email = '/html/body/app-root/app/div/div[2]/div/form/div[1]/div/input'
+siguiente = '/html/body/app-root/app/div/div[2]/div/form/div[2]/button'
+token = 'https://involveprecan.involverh.com.mx/activate-account/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzEwQHlvcG1haWwuY29tIiwiZW1haWxVc2VyIjoiMTcxMEB5b3BtYWlsLmNvbSIsImtleVN5c3RlbSI6Ik1FWCIsImlkIjoiZmY4MDgwODE4YjM5ZWY3MTAxOGIzZWRjZDViMTAwMWMiLCJleHAiOjE2OTc1NjczNDcsImlhdCI6MTY5NzU2Njc0NywianRpIjoiZmY4MDgwODE4YjM5ZWY3MTAxOGIzZWRjZDViMTAwMWMiLCJhdXRob3JpdGllcyI6WyJDQU5ESURBVEUiXSwidXNlclJvbCI6IkNBTkRJREFURSJ9.y1u5OSEhszHPTjnKW0khjF09f5oJb5zGZ4wOl_DA284hARMU3kKLVhNno4ZGaiBYGv1DjQ7hJDTskuauG6ia1g'

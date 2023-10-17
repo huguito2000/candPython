@@ -1,0 +1,8 @@
+privacidad = '/html/body/app-root/app-main-page/app-legals-page/div/div[1]/div/form/div[1]/label/span[2]/a'
+aceptar = '//*[@id="privacyNoticeModalLong"]/div/div/div[2]/div/div[2]/a'
+terminos = '/html/body/app-root/app-main-page/app-legals-page/div/div[1]/div/form/div[2]/label/span[2]/a'
+aceptar2 = '//*[@id="TermsAndConditionsModalLong"]/div/div/div[2]/div/div[2]/a'
+cookies = '/html/body/app-root/app-main-page/app-legals-page/div/div[1]/div/form/div[3]/label/span[2]/a'
+aceptar3 = '//*[@id="cookiesPolicyModalLong"]/div/div/div[2]/div[3]/div[2]/a'
+mejorarCV = '/html/body/app-root/app-main-page/app-legals-page/div/div[1]/div/form/div[4]/label/input'
+siguiente = '/html/body/app-root/app-main-page/app-legals-page/div/div[1]/div/form/div[5]/button'

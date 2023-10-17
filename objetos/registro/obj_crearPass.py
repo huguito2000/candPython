@@ -1,0 +1,7 @@
+password = '/html/body/app-root/app-main-page/app-reset-password-page/div/div[1]/div/form/div[1]/div/input'
+mostrar = '/html/body/app-root/app-main-page/app-reset-password-page/div/div[1]/div/form/div[1]/div/span/small[1]'
+ocultar = '/html/body/app-root/app-main-page/app-reset-password-page/div/div[1]/div/form/div[1]/div/span/small[2]'
+password2 = '/html/body/app-root/app-main-page/app-reset-password-page/div/div[1]/div/form/div[2]/div/div/input'
+mostrar2 = '/html/body/app-root/app-main-page/app-reset-password-page/div/div[1]/div/form/div[2]/div/div/span/small[1]'
+ocultar2 = '/html/body/app-root/app-main-page/app-reset-password-page/div/div[1]/div/form/div[2]/div/div/span/small[2]'
+siguiente = '/html/body/app-root/app-main-page/app-reset-password-page/div/div[1]/div/form/div[3]/button'
