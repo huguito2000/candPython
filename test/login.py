@@ -4,6 +4,7 @@ from objetos.obj_login import email, siguiente, password, mostrar, ocultar
 from objetos.funciones import text_elemento, captura_time, click_elemento
 
 carpeta = 'login'
+
 def loginPruebas():
     try:
         click_elemento(siguiente, carpeta, 1)
@@ -37,7 +38,7 @@ def loginPruebas():
 
 
 def loginValido():
-    text_elemento(email, 'huguito.candidato@yopmail.com', carpeta, 2)
+    text_elemento(email, 'cand18103552@yopmail.com', carpeta, 2)
 
     text_elemento(password, 'Abcd.1234', carpeta, 1)
     click_elemento(siguiente, carpeta, 1)

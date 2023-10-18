@@ -1,4 +1,4 @@
-telefono = '/html/body/app-root/app-main-page/app-register-phone-page/div/div[1]/div/form/div[1]/div/input'
+campoTelefono = '/html/body/app-root/app-main-page/app-register-phone-page/div/div[1]/div/form/div[1]/div/input'
 siguiente = '/html/body/app-root/app-main-page/app-register-phone-page/div/div[1]/div/form/div[2]/button'
 cambioTelefono = '/html/body/app-root/app-main-page/app-register-phone-page/div/div[1]/div/p[2]/button'
 volverEnviar = '/html/body/app-root/app-main-page/app-register-phone-page/div/div[1]/div/form/div[2]/button[2]'

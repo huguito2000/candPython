@@ -26,3 +26,4 @@ def legales():
     except Exception as e:
         print('no paso legales', str(e))
         return 'no pase legales'
+
