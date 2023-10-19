@@ -68,13 +68,21 @@ def scrollearElemento(xpath, carpeta, segundos):
 
 
 ruta = ''
-
+def getRuta():
+    imgRuta = os.getcwd().split('/')
+    print(len(imgRuta))
+    base = ''
+    for i in range(len(imgRuta) - 2):
+        print(imgRuta[i])
+        base = base + str(imgRuta[i]) + '/'
+    return base
 
 def foto():
     global ruta
-    imagen = random.randint(0, 10)
+    baseImg = getRuta()
+    imagen = random.randint(0, 11)
     print(imagen)
-    ruta = ('/Users/huguito/PycharmProjects/pythonProject/pythonProject/Reclutador/Archivos/' + str(imagen) + '.jpeg')
+    ruta = (baseImg +'archivos/imgPerfil/' + str(imagen) + '.jpeg')
     print(ruta)
     return ruta
 
@@ -112,14 +120,14 @@ def codigo(xpath, carpeta, code1, code2, code3, code4, segundos):
 
 rutapdf = ''
 def pdfs():
-    global rutaPDF
+    global ruta
+    base= getRuta()
     pdf = ['alberto', 'carlos', 'cristian', 'daniel', 'diana', 'mario', 'octavio', 'romero']
     aleatorio = random.choice(pdf)
     print(aleatorio)
-    rutapdf = '/Users/huguito/PycharmProjects/pythonProject/pythonProject/candidato/archivos/pdf/' + aleatorio + '.pdf'
-    print(rutapdf)
-    return rutapdf
-
+    ruta = (base + 'archivos/pdf/' + str(aleatorio) + '.pdf')
+    print(ruta)
+    return ruta
 
 def pdf(xpath, valor, carpeta: str, segundos=2):
     perfil = driver.find_element(By.XPATH, xpath)

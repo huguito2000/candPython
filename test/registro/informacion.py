@@ -1,21 +1,13 @@
-import random
 import time
 from test.registro.telefono import telefono
 from objetos.funciones import text_elemento, click_elemento, comboBox,pdf,nombres, apellidos, fechaNac
 from objetos.registro.obj_informacion1 import subirCV, nombre1, nombre2, apellidoP, apellidoM, fecha, nacionalidad, \
-    edoCivil, genero, siguiente
+    edoCivil, genero, siguiente, rutapdf
 
 def informacion1():
     try:
         telefono()
         carpeta = 'informacion'
-        time.sleep(3)
-        pdfs = ['alberto', 'carlos', 'cristian', 'daniel', 'diana', 'mario', 'octavio', 'romero']
-        aleatorio = random.choice(pdfs)
-        print(aleatorio)
-        rutapdf = '/Users/huguito/PycharmProjects/pythonProject/pythonProject/candidato/archivos/pdf/' + aleatorio + '.pdf'
-        print(rutapdf)
-
         pdf(subirCV,rutapdf, carpeta, 2)
         time.sleep(30)
         text_elemento(nombre1, '1234', carpeta, 2)
@@ -42,3 +34,5 @@ def informacion1():
     except Exception as e:
         print('no paso la informacion', str(e))
         return 'no paso la informacion'
+
+informacion1()

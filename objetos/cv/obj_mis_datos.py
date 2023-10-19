@@ -1,3 +1,4 @@
+from objetos.funciones import foto
 perfil = '/html/body/app-root/app-main-page/app-header/div[1]/div[1]/div[3]/a/img'
 misDatos = '/html/body/app-root/app-main-page/app-header/div[1]/div[1]/div[3]/div/button[1]'
 nombre = '/html/body/app-root/app-main-page/app-profile-page/div/div/div/form/div[1]/input'
@@ -22,6 +23,10 @@ sitioPersonal = '/html/body/app-root/app-main-page/app-profile-page/div/div/div/
 cancelar = '/html/body/app-root/app-main-page/app-profile-page/div/div/div/form/div[18]/a'
 guardar = '/html/body/app-root/app-main-page/app-profile-page/div/div/div/form/div[18]/button'
 
+imgPerfil = '//*[@id="file"]'
+img_path = foto()
+print(img_path)
+continuarImg = '/html/body/ngb-modal-window/div/div/div/div[2]/button'
 
 
 

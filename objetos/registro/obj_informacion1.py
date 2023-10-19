@@ -11,5 +11,7 @@ edoCivil = '/html/body/app-root/app-main-page/app-name-page/div/div[1]/form/div[
 genero = '/html/body/app-root/app-main-page/app-name-page/div/div[1]/form/div[4]/div[2]/div/div/select'
 siguiente = '/html/body/app-root/app-main-page/app-name-page/div/div[1]/form/div[6]/button'
 
-pdfs()
+
+rutapdf = pdfs()
+print(rutapdf)
 

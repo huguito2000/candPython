@@ -1,0 +1,7 @@
+legales = '//*[@id="headingTwo"]/h2/button'
+terminoCondiciones = '//*[@id="collapseTwo"]/div/ul/li[1]/a'
+aceptar = '//*[@id="TermsAndConditionsModalLong"]/div/div/div[2]/div/div[2]/a'
+avisoPrivacidad = '//*[@id="collapseTwo"]/div/ul/li[2]/a'
+aceptar2 = '//*[@id="privacyNoticeModalLong"]/div/div/div[2]/div/div[2]/a'
+cookies = '//*[@id="collapseTwo"]/div/ul/li[3]/a'
+aceptar3 = '//*[@id="cookiesPolicyModalLong"]/div/div/div[2]/div[3]/div[2]/a'

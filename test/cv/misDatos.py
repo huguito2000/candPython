@@ -1,20 +1,19 @@
-import random
 import time
-
 from test.login import loginValido
-from objetos.funciones import click_elemento, text_elemento, nombres, apellidos, fechaNac, comboBox, scrollearElemento
+from objetos.funciones import click_elemento, text_elemento, nombres, apellidos, fechaNac, comboBox, scrollearElemento, cambio_imagen
 from objetos.cv.obj_mis_datos import perfil, misDatos, nombre, apellidoP, apellidoM, fecha, genero, edoCivil, \
     nacionalidad, zonaActual, municipioA, puesto, sueldo, zonaTrabajo, municipioT, \
-    residenciaSi, residenciaNo, github, behance, linkedIn, sitioPersonal, cancelar, guardar
+    residenciaSi, residenciaNo, github, behance, linkedIn, sitioPersonal, cancelar, guardar, imgPerfil, img_path, continuarImg
 
 
 def mis_Datos():
     try:
-        puestos = ['abogado', 'desarrollador', 'medico', 'contador', 'Filósofo', 'Profesor', 'Periodista', 'Enfermero']
-        aleatorio = random.choice(puestos)
-
         loginValido()
         carpeta = 'misDatos'
+
+        cambio_imagen(imgPerfil,img_path, carpeta, 2)
+        click_elemento(continuarImg, carpeta, 2)
+
         click_elemento(perfil, carpeta, 2)
         click_elemento(misDatos, carpeta, 2)
         scrollearElemento(cancelar, carpeta, 2)
