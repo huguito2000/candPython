@@ -31,14 +31,20 @@ def captura_time(carpeta: str, segundos):
 
 def click_elemento(xpath, carpeta: str, segundos=1):
     Btnhome = driver.find_element(By.XPATH, xpath)
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(10)
     Btnhome.click()
     captura_time(carpeta, segundos)
 
 
+def borrarTexto(xpath, segundos = 1):
+    CampoNombres = driver.find_element(By.XPATH, xpath)
+    driver.implicitly_wait(segundos)
+    CampoNombres.clear()
+
+
 def text_elemento(xpath, valor, carpeta: str, segundos=1):
     CampoNombres = driver.find_element(By.XPATH, xpath)
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(10)
     CampoNombres.clear()
     CampoNombres.send_keys(valor)
     captura_time(carpeta, segundos)
@@ -46,7 +52,7 @@ def text_elemento(xpath, valor, carpeta: str, segundos=1):
 
 def text_elemento_intro(xpath, valor, carpeta: str, segundos=1):
     CampoNombres = driver.find_element(By.XPATH, xpath)
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(10)
     CampoNombres.clear()
     CampoNombres.send_keys(valor)
     time.sleep(1)
@@ -56,7 +62,7 @@ def text_elemento_intro(xpath, valor, carpeta: str, segundos=1):
 
 def scrollearElemento(xpath, carpeta, segundos):
     element = driver.find_element(By.XPATH, xpath)
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(10)
     element.location_once_scrolled_into_view
     captura_time(carpeta, segundos)
 
@@ -75,7 +81,7 @@ def foto():
 
 def cambio_imagen(xpath, valor, carpeta: str, segundos=2):
     perfil = driver.find_element(By.XPATH, xpath)
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(10)
     perfil.send_keys(valor)
     time.sleep(segundos)
     captura_time(carpeta, segundos)
@@ -83,7 +89,7 @@ def cambio_imagen(xpath, valor, carpeta: str, segundos=2):
 
 def comboBox(xpath, valor, carpeta: str, segundos=2):
     nombres = driver.find_element(By.XPATH, xpath)
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(10)
     drop = Select(nombres)
     drop.select_by_index(valor)
     captura_time(carpeta, segundos)
