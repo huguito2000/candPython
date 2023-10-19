@@ -1,0 +1,23 @@
+misVancates = '/html/body/app-root/app-main-page/app-header/div[1]/div[1]/div[1]/div/a'
+filtros = '/html/body/app-root/app-main-page/app-header/div[1]/div[1]/div[1]/button'
+buscar = '//*[@id="filtersModal"]/div/div/form/div[2]/button/span'
+puesto = '//*[@id="positionSearch-focusable"]'
+ubicacion = '//*[@id="filtersModal"]/div/div/form/div[3]/button/span'
+cbUbicacion = '//*[@id="citySearch-focusable"]'
+salario = '//*[@id="filtersModal"]/div/div/form/div[4]/button/span'
+sMin = '//*[@id="salary-focusable"]'
+sMax = '//*[@id="filtersModal"]/div/div/form/div[4]/div[2]/div[2]/input'
+jornada = '//*[@id="filtersModal"]/div/div/form/div[5]/button/span'
+cbJornada = '//*[@id="workingDay-focusable"]'
+modalidad = '//*[@id="filtersModal"]/div/div/form/div[6]/button/span'
+cbModalidad = '//*[@id="modality-focusable"]'
+contratacion = '//*[@id="filtersModal"]/div/div/form/div[7]/button/span'
+cbContratacion = '//*[@id="contract-focusable"]'
+tipoEmpresa = '//*[@id="filtersModal"]/div/div/form/div[8]/button/span'
+cbTipoEmpresa = '//*[@id="typeCompany-focusable"]'
+fecha = '//*[@id="filtersModal"]/div/div/form/div[9]/button/span'
+cbFecha = '//*[@id="timeVacant-focusable"]'
+filtrarVacantes = '//*[@id="filtersModal"]/div/div/form/div[10]/div/button'
+
+
+
