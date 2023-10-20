@@ -38,11 +38,17 @@ def registroPruebas():
 
 
 def registroValido():
-    click_elemento(crearCuenta, carpeta, 2)
-    text_elemento(email, correo, carpeta, 2)
-    click_elemento(siguiente, carpeta, 2)
-    time.sleep(2)
-    token(tokens)
+    try:
+        click_elemento(crearCuenta, carpeta, 2)
+        text_elemento(email, correo, carpeta, 2)
+        click_elemento(siguiente, carpeta, 2)
+        time.sleep(2)
+        token(tokens)
+        print('paso el registro')
+        return 'paso el registro'
+    except Exception as e:
+        print('no paso el registro')
+        return 'no paso el registro'
 
 
 

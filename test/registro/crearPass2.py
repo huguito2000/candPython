@@ -7,7 +7,6 @@ from objetos.registro.obj_crearPass import password, mostrar, ocultar, password2
 carpeta = 'crearPass'
 def passPruebas ():
     try:
-        registroPruebas()
         print('empieza la creacion de la password')
         time.sleep(2)
         text_elemento(password, 'abcd', carpeta, 2)
@@ -48,16 +47,21 @@ def passPruebas ():
         return 'no se creo la pass'
 
 def crearPass():
-    registroValido()
-    text_elemento(password, 'Abcd.1234', carpeta, 2)
-    click_elemento(mostrar, carpeta, 2)
-    click_elemento(ocultar, carpeta, 2)
+    try:
+        text_elemento(password, 'Abcd.1234', carpeta, 2)
+        click_elemento(mostrar, carpeta, 2)
+        click_elemento(ocultar, carpeta, 2)
 
-    text_elemento(password2, 'Abcd.1234', carpeta, 2)
-    click_elemento(mostrar2, carpeta, 2)
-    click_elemento(ocultar2, carpeta, 2)
+        text_elemento(password2, 'Abcd.1234', carpeta, 2)
+        click_elemento(mostrar2, carpeta, 2)
+        click_elemento(ocultar2, carpeta, 2)
 
-    click_elemento(siguiente, carpeta, 2)
-    captura_time(carpeta, 2)
+        click_elemento(siguiente, carpeta, 2)
+        captura_time(carpeta, 2)
+        print('se creo la pass')
+        return ' se creo la pass'
+    except Exception as e:
+        print('no se creo la pass', str(e))
+        return 'no se creo la pass'
 
 

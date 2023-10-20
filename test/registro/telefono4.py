@@ -7,7 +7,6 @@ from objetos.registro.obj_telefono import campoTelefono, siguiente, cambioTelefo
 
 def telefono():
     try:
-        legales()
         carpeta = 'telefono'
         text_elemento(campoTelefono, '5569777077', carpeta, 2)
         click_elemento(siguiente, carpeta, 2)

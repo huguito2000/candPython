@@ -5,7 +5,6 @@ from objetos.registro.obj_legales import privacidad, aceptar, terminos, aceptar2
 carpeta = 'legales'
 def legales():
     try:
-        passPruebas()
         click_elemento(privacidad, carpeta, 2)
         scrollearElemento(aceptar, carpeta, 2)
         click_elemento(aceptar, carpeta, 2)

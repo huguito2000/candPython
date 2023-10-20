@@ -6,10 +6,9 @@ from objetos.registro.obj_informacion1 import subirCV, nombre1, nombre2, apellid
 
 def informacion1():
     try:
-        telefono()
         carpeta = 'informacion'
         pdf(subirCV,rutapdf, carpeta, 2)
-        time.sleep(30)
+        time.sleep(20)
         text_elemento(nombre1, '1234', carpeta, 2)
         text_elemento(nombre2, '56789', carpeta, 2)
         text_elemento(apellidoP, '1234', carpeta, 2)
@@ -35,4 +34,3 @@ def informacion1():
         print('no paso la informacion', str(e))
         return 'no paso la informacion'
 
-informacion1()
