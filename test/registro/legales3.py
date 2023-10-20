@@ -1,11 +1,11 @@
 from objetos.funciones import click_elemento, scrollearElemento
-from test.registro.crearPass import crearPass
+from test.registro.crearPass2 import crearPass, passPruebas
 from objetos.registro.obj_legales import privacidad, aceptar, terminos, aceptar2, cookies, aceptar3, mejorarCV, \
     siguiente
 carpeta = 'legales'
 def legales():
     try:
-        crearPass()
+        passPruebas()
         click_elemento(privacidad, carpeta, 2)
         scrollearElemento(aceptar, carpeta, 2)
         click_elemento(aceptar, carpeta, 2)

@@ -1,5 +1,5 @@
 import time
-from test.registro.telefono import telefono
+from test.registro.telefono4 import telefono
 from objetos.funciones import text_elemento, click_elemento, comboBox,pdf,nombres, apellidos, fechaNac
 from objetos.registro.obj_informacion1 import subirCV, nombre1, nombre2, apellidoP, apellidoM, fecha, nacionalidad, \
     edoCivil, genero, siguiente, rutapdf

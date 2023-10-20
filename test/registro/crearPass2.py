@@ -1,7 +1,7 @@
 import time
 
 from objetos.funciones import text_elemento, click_elemento, captura_time
-from test.registro.registro import registroValido, registroPruebas
+from test.registro.registro1 import registroValido, registroPruebas
 from objetos.registro.obj_crearPass import password, mostrar, ocultar, password2, mostrar2, ocultar2, siguiente
 
 carpeta = 'crearPass'

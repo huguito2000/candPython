@@ -1,6 +1,9 @@
+import random
 import time
+
+from objetos.browser import driver
 from test.login import loginValido
-from objetos.funciones import click_elemento, text_elemento, nombres, apellidos, fechaNac, comboBox, scrollearElemento, cambio_imagen
+from objetos.funciones import click_elemento, text_elemento, nombres, apellidos, fechaNac, comboBox, scrollearElemento, cambio_imagen, borrarTexto
 from objetos.cv.obj_mis_datos import perfil, misDatos, nombre, apellidoP, apellidoM, fecha, genero, edoCivil, \
     nacionalidad, zonaActual, municipioA, puesto, sueldo, zonaTrabajo, municipioT, \
     residenciaSi, residenciaNo, github, behance, linkedIn, sitioPersonal, cancelar, guardar, imgPerfil, img_path, continuarImg
@@ -13,11 +16,12 @@ def mis_Datos():
 
         cambio_imagen(imgPerfil,img_path, carpeta, 2)
         click_elemento(continuarImg, carpeta, 2)
+        time.sleep(5)
 
         click_elemento(perfil, carpeta, 2)
         click_elemento(misDatos, carpeta, 2)
         scrollearElemento(cancelar, carpeta, 2)
-        time.sleep(5)
+        time.sleep(3)
         click_elemento(cancelar, carpeta, 2)
 
         click_elemento(perfil, carpeta, 2)
@@ -53,7 +57,9 @@ def mis_Datos():
         comboBox(municipioA, 10, carpeta, 2)
 
         scrollearElemento(sueldo, carpeta, 2)
-        text_elemento(sueldo, '0', carpeta, 2)
+        borrarTexto(sueldo, 1)
+        candSueldo = random.randint(1000, 30000)
+        text_elemento(sueldo, candSueldo, carpeta, 2)
 
         comboBox(zonaTrabajo, 11, carpeta, 2)
         comboBox(zonaTrabajo, 7, carpeta, 2)
@@ -71,9 +77,12 @@ def mis_Datos():
         time.sleep(2)
 
         scrollearElemento(perfil, carpeta, 2)
+        driver.quit()
+        time.sleep(1)
         print('ya paso mis datos')
         return ('ya paso mis datos')
 
     except Exception as e:
         print('no paso mis datos', str(e))
         return ('no paso mis datos')
+

@@ -1,6 +1,6 @@
 import random
 
-from test.registro.informacion import informacion1
+from test.registro.informacion5 import informacion1
 from objetos.funciones import comboBox, click_elemento, text_elemento
 from objetos.registro.obj_informacion2 import primerEmpleo, trabajo, zonaTrabajo, municipioT, zonaActual, municipioA, \
     sueldo, siguiente

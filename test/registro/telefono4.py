@@ -1,7 +1,7 @@
 import time
 
 from objetos.funciones import text_elemento, click_elemento, captura_time, codigo
-from test.registro.legales import legales
+from test.registro.legales3 import legales
 from objetos.registro.obj_telefono import campoTelefono, siguiente, cambioTelefono, volverEnviar, code, code1, code2, code3, \
     code4, siguiente2
 

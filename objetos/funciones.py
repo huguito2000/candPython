@@ -39,7 +39,9 @@ def click_elemento(xpath, carpeta: str, segundos=1):
 def borrarTexto(xpath, segundos = 1):
     CampoNombres = driver.find_element(By.XPATH, xpath)
     driver.implicitly_wait(segundos)
-    CampoNombres.clear()
+    CampoNombres.send_keys(Keys.COMMAND + "a")
+    time.sleep(1)
+    CampoNombres.send_keys(Keys.DELETE)
 
 
 def text_elemento(xpath, valor, carpeta: str, segundos=1):
