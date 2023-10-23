@@ -7,7 +7,7 @@ from objetos.registro.obj_informacion1 import subirCV, nombre1, nombre2, apellid
 def informacion1():
     try:
         carpeta = 'informacion'
-        pdf(subirCV,rutapdf, carpeta, 2)
+        pdf(subirCV, rutapdf, carpeta, 2)
         time.sleep(20)
         text_elemento(nombre1, '1234', carpeta, 2)
         text_elemento(nombre2, '56789', carpeta, 2)
@@ -29,7 +29,7 @@ def informacion1():
         time.sleep(1)
         click_elemento(siguiente, carpeta, 2)
         print('ya paso la información de los nombres')
-        return 'ya paso la información de los nombres'
+        return 'ya paso la información de los nombres correctamente'
     except Exception as e:
         print('no paso la informacion', str(e))
         return 'no paso la informacion'

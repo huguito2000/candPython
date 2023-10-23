@@ -20,7 +20,6 @@ def generar_informe_pdf(nombre_archivo, reporteRegistro, reporteCrearPass, repor
     c.drawString(72, 550, reporteInformacion)
     c.drawString(72, 520, reporteInformacion2)
 
-
     c.save()
 
 
@@ -31,6 +30,5 @@ def registroTest():
     resultado_Telefono = telefono4.telefono()
     resultado_Infomracion1 = informacion5.informacion1()
     resultado_Infomracion2 = informacion6.registroCompleto()
-    nombre_archivo = "reportes/informe" + fecha + ".pdf"
+    nombre_archivo = "reportes/registro " + fecha + ".pdf"
     generar_informe_pdf(nombre_archivo, resultado_registro, resultado_CrearPass, resultado_legales, resultado_Telefono, resultado_Infomracion1, resultado_Infomracion2)
-

@@ -20,8 +20,7 @@ continuarVE = '/html/body/app-root/app-main-page/app-postulation-handler-page/ap
 iniciar = '/html/body/app-root/app-main-page/app-postulation-handler-page/app-interview-page/div/div/div[2]/button'
 detener = '/html/body/app-root/app-main-page/app-postulation-handler-page/app-interview-page/div/div/div[2]/button'
 guardar = '/html/body/app-root/app-main-page/app-postulation-handler-page/app-interview-page/div/div/div[2]/button[2]'
-
-
+cerrarSesion = '/html/body/app-root/app-main-page/app-header/div[1]/div[1]/div[3]/div/button[4]'
 
 
 

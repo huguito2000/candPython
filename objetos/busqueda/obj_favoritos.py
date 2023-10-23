@@ -9,3 +9,5 @@ favorito1 = '/html/body/app-root/app-main-page/app-vacancies-outlet/div/div/app-
 favorito2 = '/html/body/app-root/app-main-page/app-vacancies-outlet/div/div/app-favorites/div/div/div[2]/div/button/i'
 favorito3 = '/html/body/app-root/app-main-page/app-vacancies-outlet/div/div/app-favorites/div/div/div[3]/div/button/i'
 favorito4 = '/html/body/app-root/app-main-page/app-vacancies-outlet/div/div/app-favorites/div/div/div[4]/div/button/i'
+
+cerrarSesion = '/html/body/app-root/app-main-page/app-header/div[1]/div[1]/div[3]/div/button[4]'

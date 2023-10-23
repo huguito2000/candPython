@@ -1,5 +1,7 @@
 import random
 import time
+
+from objetos.obj_login import cerrarSesion
 from test.login import loginValido
 from objetos.browser import driver
 from objetos.cv.obj_mis_datos import perfil
@@ -25,7 +27,7 @@ def Ajustes():
         click_elemento(telefono, carpeta, 2)
         click_elemento(passw, carpeta, 2)
         click_elemento(correo, carpeta, 2)
-
+        '''
         text_elemento(email, 'huguito.candidato@yopmail.com', carpeta, 2)
         text_elemento(passwordEmail, 'Abcd.1234', carpeta, 2)
         click_elemento(siguienteEmail, carpeta, 2)
@@ -120,7 +122,7 @@ def Ajustes():
         click_elemento(incidencia, carpeta, 2)
         time.sleep(3)
         driver.switch_to.window(driver.window_handles[0])
-
+        '''
         # eliminar cuenta
         click_elemento(eliminarCuenta, carpeta, 2)
         click_elemento(continuarEli, carpeta, 2)
@@ -129,14 +131,16 @@ def Ajustes():
         click_elemento(mostrarEliminar, carpeta, 2)
         click_elemento(ocultarEliminar, carpeta, 2)
         click_elemento(eliminar, carpeta, 2)
-        time.sleep(1)
+        time.sleep(5)
         click_elemento(perfil, carpeta, 2)
 
         click_elemento(miCV, carpeta, 2)
         time.sleep(1)
-        driver.quit()
+        click_elemento(perfil, carpeta, 2)
+        click_elemento(cerrarSesion, carpeta, 2)
+
         print('ya paso ajustes')
-        return 'ya paso ajustes'
+        return 'ya paso la seccion de ajustes correctamente'
     except Exception as e:
         print('no paso ajustes', str(e))
         return 'no paso ajustes'

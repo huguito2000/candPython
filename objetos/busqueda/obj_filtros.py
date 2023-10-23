@@ -18,6 +18,6 @@ cbTipoEmpresa = '//*[@id="typeCompany-focusable"]'
 fecha = '//*[@id="filtersModal"]/div/div/form/div[9]/button/span'
 cbFecha = '//*[@id="timeVacant-focusable"]'
 filtrarVacantes = '//*[@id="filtersModal"]/div/div/form/div[10]/div/button'
-
+cerrarSesion = '/html/body/app-root/app-main-page/app-header/div[1]/div[1]/div[3]/div/button[4]'
 
 

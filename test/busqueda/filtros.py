@@ -1,11 +1,12 @@
 import random
 import time
+
+from objetos.cv.obj_mis_datos import perfil
 from test.login import loginValido
-from objetos.browser import driver
-from objetos.funciones import click_elemento, text_elemento, comboBox, borrarTexto
+from objetos.funciones import click_elemento, text_elemento, comboBox, borrarTexto, scrollearElemento
 from objetos.busqueda.obj_filtros import misVancates, filtros, buscar, puesto, ubicacion, cbUbicacion, salario, sMin, \
     sMax, jornada, cbJornada, modalidad, cbModalidad, contratacion, cbContratacion, tipoEmpresa, cbTipoEmpresa, fecha, \
-    cbFecha, filtrarVacantes
+    cbFecha, filtrarVacantes, cerrarSesion
 
 def filtrosBusqueda():
     try:
@@ -59,7 +60,11 @@ def filtrosBusqueda():
         click_elemento(filtrarVacantes, carpeta, 2)
         time.sleep(2)
 
-        driver.quit()
+        scrollearElemento(perfil, carpeta, 2)
+        time.sleep(2)
+        click_elemento(perfil, carpeta, 2)
+        click_elemento(cerrarSesion, carpeta, 2)
+
         print('ya paso el filtro de busqueda')
         return 'ya paso el filtro de busqueda'
     except Exception as e:

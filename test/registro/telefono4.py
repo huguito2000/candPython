@@ -11,12 +11,13 @@ def telefono():
         text_elemento(campoTelefono, '5569777077', carpeta, 2)
         click_elemento(siguiente, carpeta, 2)
 
-        print('se mando el nuevo codigo')
         click_elemento(cambioTelefono, carpeta, 2)
         text_elemento(campoTelefono, '5569777077', carpeta, 2)
         click_elemento(siguiente, carpeta, 2)
         click_elemento(volverEnviar, carpeta, 2)
 
+        codigo(code, carpeta, code1, code2, code3, code4, 2)
+        click_elemento(siguiente2, carpeta, 2)
         codigo(code, carpeta, code1, code2, code3, code4, 2)
         click_elemento(siguiente2, carpeta, 2)
 

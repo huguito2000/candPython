@@ -30,10 +30,11 @@ def captura_time(carpeta: str, segundos):
 
 
 def click_elemento(xpath, carpeta: str, segundos=1):
+    captura_time(carpeta, segundos)
     Btnhome = driver.find_element(By.XPATH, xpath)
     driver.implicitly_wait(10)
     Btnhome.click()
-    captura_time(carpeta, segundos)
+
 
 
 def borrarTexto(xpath, segundos = 1):
@@ -74,7 +75,7 @@ def getRuta():
     imgRuta = os.getcwd().split('/')
     print(len(imgRuta))
     base = ''
-    for i in range(len(imgRuta) - 2):
+    for i in range(len(imgRuta)):
         print(imgRuta[i])
         base = base + str(imgRuta[i]) + '/'
     return base
@@ -173,3 +174,5 @@ def fechaNac(xpath, carpeta, segundos=1):
     aleatorio = random.choice(fechas)
     print(aleatorio)
     text_elemento(xpath, aleatorio, carpeta, segundos)
+
+
