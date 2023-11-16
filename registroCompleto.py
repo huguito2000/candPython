@@ -32,3 +32,4 @@ def registroTest():
     resultado_Infomracion2 = informacion6.registroCompleto()
     nombre_archivo = "reportes/registro " + fecha + ".pdf"
     generar_informe_pdf(nombre_archivo, resultado_registro, resultado_CrearPass, resultado_legales, resultado_Telefono, resultado_Infomracion1, resultado_Infomracion2)
+

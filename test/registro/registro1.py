@@ -50,6 +50,7 @@ def registroValido():
         print('no paso el registro')
         return 'no paso el registro'
 
+registroValido()
 
 
 

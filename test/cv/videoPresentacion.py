@@ -8,11 +8,11 @@ from objetos.funciones import click_elemento, scrollearElemento
 from objetos.cv.miCV.Obj_videoPresentacion import grabar, masTarde, continuar, pregunta1, pregunta2, pregunta3, \
     pregunta4, iniciarGrabacion, siguientePregunta, detener, reiniciar, guardar
 
-def miCv():
+def PresentacionVideo():
     try:
         loginValido()
 
-        time.sleep(1)
+        time.sleep(5)
         carpeta = 'miCV'
         scrollearElemento(grabar, carpeta, 2)
         click_elemento(grabar, carpeta, 2)

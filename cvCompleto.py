@@ -3,7 +3,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from test.cv.myData import myDatos
 from test.cv.ajustes import Ajustes
-from test.cv.miCV import miCv
+from test.cv.videoPresentacion import miCv
 
 
 now = datetime.now()

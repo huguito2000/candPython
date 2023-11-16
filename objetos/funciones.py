@@ -8,7 +8,7 @@ import random
 from selenium.webdriver.support.ui import Select
 
 contador = 1
-url = 'https://involveprecan.involverh.com.mx/activate-account/'
+url = 'https://involvestagecan.involverh.com.mx/activate-account/'
 urlToken = ''
 
 
@@ -108,6 +108,7 @@ def comboBox(xpath, valor, carpeta: str, segundos=2):
 
 def codigo(xpath, carpeta, code1, code2, code3, code4, segundos):
     Confirmacion = driver.find_element(By.XPATH, xpath)
+    time.sleep(1)
     codigo = Confirmacion.text
     print(codigo.split(','))
     print(codigo[0])

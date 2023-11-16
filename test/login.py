@@ -1,6 +1,4 @@
 import time
-
-from objetos.browser import driver
 from objetos.obj_login import email, siguiente, password, mostrar, ocultar
 from objetos.funciones import text_elemento, captura_time, click_elemento
 

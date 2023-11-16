@@ -27,7 +27,7 @@ def Ajustes():
         click_elemento(telefono, carpeta, 2)
         click_elemento(passw, carpeta, 2)
         click_elemento(correo, carpeta, 2)
-        '''
+
         text_elemento(email, 'huguito.candidato@yopmail.com', carpeta, 2)
         text_elemento(passwordEmail, 'Abcd.1234', carpeta, 2)
         click_elemento(siguienteEmail, carpeta, 2)
@@ -122,7 +122,7 @@ def Ajustes():
         click_elemento(incidencia, carpeta, 2)
         time.sleep(3)
         driver.switch_to.window(driver.window_handles[0])
-        '''
+
         # eliminar cuenta
         click_elemento(eliminarCuenta, carpeta, 2)
         click_elemento(continuarEli, carpeta, 2)
@@ -144,3 +144,5 @@ def Ajustes():
     except Exception as e:
         print('no paso ajustes', str(e))
         return 'no paso ajustes'
+
+Ajustes()

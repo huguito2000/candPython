@@ -67,3 +67,5 @@ def postulacionCorrecta():
     except Exception as e:
         print('no se hizo la postulacion', str(e))
         return 'No se realizo la postulacion'
+
+postulacionCorrecta()
