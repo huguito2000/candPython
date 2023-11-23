@@ -40,6 +40,7 @@ def loginValido():
         text_elemento(email, 'huguito.candidato@yopmail.com', carpeta, 2)
         text_elemento(password, 'Abcd.1234', carpeta, 1)
         click_elemento(siguiente, carpeta, 3)
+        time.sleep(10)
         print('se hizo login')
         return 'se hizo login correctamente'
     except Exception as e:
@@ -48,3 +49,4 @@ def loginValido():
 
 
 #cand18103552@yopmail.com
+

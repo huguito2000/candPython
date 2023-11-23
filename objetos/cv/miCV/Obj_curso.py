@@ -1,0 +1,7 @@
+agregar = '/html/body/app-root/app-main-page/app-cv-outlet/app-cv/div[2]/div[1]/div[3]/div[1]/div[2]/div/div/a'
+curso = '/html/body/app-root/app-main-page/app-cv-outlet/app-courses/div/div[1]/div/form/div[1]/input'
+institucion = '/html/body/app-root/app-main-page/app-cv-outlet/app-courses/div/div[1]/div/form/div[2]/input'
+fecha = '/html/body/app-root/app-main-page/app-cv-outlet/app-courses/div/div[1]/div/form/div[3]/input'
+horas = '/html/body/app-root/app-main-page/app-cv-outlet/app-courses/div/div[1]/div/form/div[4]/input'
+cancelar = '/html/body/app-root/app-main-page/app-cv-outlet/app-courses/div/div[1]/div/form/div[5]/button[1]'
+guardar = '/html/body/app-root/app-main-page/app-cv-outlet/app-courses/div/div[1]/div/form/div[5]/button[2]'

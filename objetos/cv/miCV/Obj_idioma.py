@@ -1,0 +1,5 @@
+agregar = '/html/body/app-root/app-main-page/app-cv-outlet/app-cv/div[2]/div[2]/div[4]/div[1]/div[2]/a'
+idioma = '/html/body/app-root/app-main-page/app-cv-outlet/app-languages/div/div[1]/div/form/div[1]/select'
+nivel = '/html/body/app-root/app-main-page/app-cv-outlet/app-languages/div/div[1]/div/form/div[2]/select'
+regresar = '/html/body/app-root/app-main-page/app-cv-outlet/app-languages/div/div[1]/div/form/div[3]/button[1]'
+add = '/html/body/app-root/app-main-page/app-cv-outlet/app-languages/div/div[1]/div/form/div[3]/button[2]'

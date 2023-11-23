@@ -8,7 +8,7 @@ import random
 from selenium.webdriver.support.ui import Select
 
 contador = 1
-url = 'https://involvestagecan.involverh.com.mx/activate-account/'
+url = 'https://involveprecan.involverh.com.mx/activate-account/'
 urlToken = ''
 
 
@@ -135,7 +135,6 @@ def pdfs():
 
 def pdf(xpath, valor, carpeta: str, segundos=2):
     perfil = driver.find_element(By.XPATH, xpath)
-    driver.implicitly_wait(2)
     driver.implicitly_wait(2)
     perfil.send_keys(valor)
     time.sleep(segundos)
