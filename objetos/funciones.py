@@ -35,8 +35,6 @@ def click_elemento(xpath, carpeta: str, segundos=1):
     driver.implicitly_wait(10)
     Btnhome.click()
 
-
-
 def borrarTexto(xpath, segundos = 1):
     CampoNombres = driver.find_element(By.XPATH, xpath)
     driver.implicitly_wait(segundos)
